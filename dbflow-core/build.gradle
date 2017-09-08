@@ -1,8 +1,4 @@
 apply plugin: 'java'
 
-project.ext.artifactId = bt_name
-
-targetCompatibility = JavaVersion.VERSION_1_7
-sourceCompatibility = JavaVersion.VERSION_1_7
-
-apply from: '../java-artifacts.gradle'
+sourceCompatibility = rootProject.ext.sourceCompatibility
+targetCompatibility = rootProject.ext.targetCompatibility
